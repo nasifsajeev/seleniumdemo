@@ -7,8 +7,8 @@
       <class name="testscript.NewsTest"/>
     </classes>
  </test>
- <test name="edgetest">
- <parameter name="browser" value="edge"></parameter>
+ <test name="firefoxtest">
+ <parameter name="browser" value="firefox"></parameter>
     <classes>
       <class name="testscript.NewsTest"/>
     </classes>

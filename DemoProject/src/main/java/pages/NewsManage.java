@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class NewsManage {
 	
-	@FindBy(xpath="(//a[@href='https://groceryapp.uniqassosiates.com/admin/list-news'][1])")WebElement morenews_info;
+//	@FindBy(xpath="(//a[@href='https://groceryapp.uniqassosiates.com/admin/list-news'][1])")WebElement morenews_info;
 	@FindBy(xpath = "//a[@onclick='click_button(1)']") WebElement new_button;
 	@FindBy(xpath = "//textarea[@id='news']") WebElement news;
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']") WebElement alert;
@@ -21,29 +21,28 @@ public class NewsManage {
 		
 	}
 
-	public void newsInfo() {
+//	public void newsMoreInfo() {
 //		morenews_info.click();
-		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("arguments[0].click();", morenews_info);
-	}
-	public void isManageNewsLoaded() {
-		
-	}
+//		JavascriptExecutor js = (JavascriptExecutor)driver;
+//		js.executeScript("arguments[0].click();", morenews_info);
+//	}
 	
-	public void createNews() {
+	
+	public NewsManage createNews() {
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click();", new_button);
-	}
-	public void isNewsInformationLoaded() {
-		
+		return this;
 	}
 	
-	public void enterNews(String newsmessage) {
+	
+	public NewsManage enterNews(String newsmessage) {
 		news.sendKeys(newsmessage);
+		return this;
 	}
 	
-	public void saveNews() {
+	public NewsManage saveNews() {
 		save_message.click();
+		return this;
 	}
 	
 	public boolean isAlertShown() {

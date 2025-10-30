@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [crossbrowsertesting]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="edgetest(failed)">
-    <parameter name="browser" value="edge"/>
+  <test thread-count="5" name="firefoxtest(failed)">
+    <parameter name="browser" value="firefox"/>
     <classes>
       <class name="testscript.NewsTest">
         <methods>
@@ -12,5 +12,5 @@
         </methods>
       </class> <!-- testscript.NewsTest -->
     </classes>
-  </test> <!-- edgetest(failed) -->
+  </test> <!-- firefoxtest(failed) -->
 </suite> <!-- Failed suite [crossbrowsertesting] -->
